@@ -317,6 +317,11 @@ input[type="datetime-local"],
 input[type="month"] {
     -webkit-appearance: listbox;
 }
+.text-apply h3{
+font-size: 0.9rem;
+
+}
+
 
 textarea {
     overflow: auto;
@@ -1887,6 +1892,19 @@ pre code {
 .table-info>th,
 .table-info>td {
     background-color: #bee5eb;
+}
+
+.text-weOffer{
+    font-size: 12px;
+}
+
+.text-weOffer h3{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.txt-offer{
+    font-size: 3.5rem;
 }
 
 .table-info th,
@@ -11059,13 +11077,13 @@ h5,
 }
 
 .ftco-navbar-light {
-    background: transparent !important;
+    background: #006db7 !important;
     z-index: 3;
     padding: 0;
 }
 
 .ftco-navbar-light .container {
-    background: #0d1128;
+    background: #006db7;
     width: 1110px;
 }
 
@@ -11193,8 +11211,10 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item.active>a {
-    color: #006db7;
+    color: #bababa;
+    font-weight: bold;
 }
+
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav>.nav-item.active>a {
@@ -11334,7 +11354,7 @@ h5,
     bottom: 0;
     content: '';
     opacity: .3;
-    background: #f1453d;
+    background: var(--primary-color);
 }
 
 .hero-wrap.hero-wrap-2 {
@@ -11862,7 +11882,7 @@ h5,
     position: relative;
     width: 80px;
     height: 80px;
-    background: #006db7;
+    background: transparent;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;

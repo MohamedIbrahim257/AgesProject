@@ -1,0 +1,213 @@
+
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slider {
+	height: 25vh;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+
+}
+
+.slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(1000px * 20);
+  
+  
+}
+
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+
+.scale{
+  transform: scale(0.7);
+}
+
+
+
+
+
+
+#carousel{
+  position: relative;
+  height: 400px;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  overflow: hidden;
+}
+
+#carousel > div.slideImg{
+  position: absolute;
+  opacity: 0;
+}
+
+#carousel > div > img{
+  width: 400px;
+  transition: width 1s;
+}
+
+#carousel > div.hideLeft{
+  left: 0%;
+  opacity: 0;
+  transition: transform 1s, left 1s, opacity 1s;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel > div.hideLeft > img{
+  width: 200px;
+}
+
+#carousel > div.hideRight{
+  left: 100%;
+  transition: transform 1s, left 1s, opacity 1s;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel > div.hideRight > img{
+  width: 200px;
+}
+
+#carousel > div.prev{
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+  opacity: 1;
+  transition: transform 1s, left 1s, opacity 1s;
+}
+
+#carousel > div.prev > img{
+  width: 300px;
+}
+
+#carousel > div.prevLeftSecond{
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+  transition: transform 1s, left 1s, opacity 1s;
+}
+
+#carousel > div.prevLeftSecond > img{
+  width: 200px;
+}
+
+#carousel > div.selected{
+  z-index: 10;
+  left: 50%;
+  transition: transform 1s, left 1s, opacity 1s;
+  opacity: 1;
+  transform: translateY(0px) translateX(-50%);
+}
+
+#carousel > div.next{
+  z-index: 5;
+  left: 70%;
+  transition: transform 1s, left 1s, opacity 1s;
+  opacity: 1;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel > div.next > img{
+  width: 300px;
+}
+
+#carousel > div.nextRightSecond{
+  z-index: 4;
+  left: 85%;
+  transition: transform 1s, left 1s, opacity 1s;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel > div.nextRightSecond > img{
+  width: 200px;
+}
+
+/* 
+div.positionBtn{
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+} */
+
+#prev, #next{
+    background: #272727;
+    color: #ffffff;
+    border: 0px;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px;
+    opacity: 0.6;
+} 
+
+#prev > span, #next >span{
+    width: 100px;
+    padding: 15px;
+    display: block;
+}
+  
+#prev{
+  text-align: right;
+  border-radius: 100% 0px 0px 100%!important;
+}
+
+#next{
+  text-align: left;
+  border-radius: 0px 100% 100% 0px!important;
+}
+
+#prev:hover, #next:hover{
+  opacity: 1;
+}
+
+#prev:focus, #next:focus{
+  border: 0px;
+}
+
+
+
+
+
+
+.owl-buttons {
+  display: none;
+}
+.owl-carousel:hover .owl-buttons {
+  display: block;
+}
+
+.owl-item {
+  text-align: center;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  background: transparent;
+  color: #869791;
+  font-size: 40px;
+  line-height: 300px;
+  margin: 0;
+  padding: 0 60px;
+  position: absolute;
+  top: 0;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 0;
+  padding-left: 20px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  right: 0;
+  padding-right: 20px;
+}
+
+
