@@ -1,28 +1,28 @@
-$(document).ready(function () {
-  $(".customer-logos").slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 4
-        }
-      },
-      {
-        breakpoint: 520,
-        settings: {
-          slidesToShow: 3
-        }
-      }
-    ]
-  });
-});
+// $(document).ready(function () {
+//   $(".customer-logos").slick({
+//     slidesToShow: 6,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 1500,
+//     arrows: false,
+//     dots: false,
+//     pauseOnHover: false,
+//     responsive: [
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           slidesToShow: 4
+//         }
+//       },
+//       {
+//         breakpoint: 520,
+//         settings: {
+//           slidesToShow: 3
+//         }
+//       }
+//     ]
+//   });
+// });
 
 
 
@@ -94,32 +94,6 @@ const slide = {
   }
 }
 
-window.onload = () => {
-
-  slide.main = document.getElementById("carousel");
-  slide.elementImg = slide.main.getElementsByClassName("slideImg");
-
-  for (num = 0; num < slide.elementImg.length; num++)
-  {
-      slide.elementImg[num].setAttribute("img-number", num);
-      
-      slide.elementImg[num].addEventListener("click", (event) => {
-          slide.imgSelected = parseInt(event.target.parentElement.getAttribute("img-number"));
-          slide.normalizeSlide();
-      });
-
-      if (slide.elementImg[num].classList.contains("selected"))
-      {
-          slide.imgSelected = num;
-      }
-  }
-
-  document.getElementById("prev").addEventListener("click", () => {slide.prevSlide()});
-  document.getElementById("next").addEventListener("click", () => {slide.nextSlide()});
-
-}
-
-
 
 
 $(document).ready(function() {
@@ -134,3 +108,32 @@ $(document).ready(function() {
   });
   
 });
+
+
+
+
+
+$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: false,
+      pauseOnHover: false,
+      pause:false,
+      responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+});
+

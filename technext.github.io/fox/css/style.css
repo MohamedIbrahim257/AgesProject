@@ -11118,19 +11118,20 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
-    font-size: 14px;
+    font-size: 15px;
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
     padding-left: 20px;
     padding-right: 20px;
-    font-weight: 400;
+    font-weight: bold;
     color: #fff;
     opacity: 1 !important;
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover {
-    color: #fff;
+    color: #bababa;
 }
+
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
