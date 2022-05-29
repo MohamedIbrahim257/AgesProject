@@ -1905,6 +1905,7 @@ pre code {
 
 .txt-offer{
     font-size: 3.5rem;
+    letter-spacing: 5px;
 }
 
 .image-hover{
@@ -1917,6 +1918,7 @@ pre code {
    width: 30rem;
   
 }
+
 .overlay-offer{
     opacity: 0.2;
     background: linear-gradient(45deg, rgb(0, 123, 255) 0%, rgb(13, 17, 40) 100%);
@@ -11468,7 +11470,7 @@ h5,
 }
 
 .owl-carousel .owl-dots .owl-dot.active {
-    background: #b3b3b3;
+    background: var(--primary-color);
 }
 
 .owl-carousel:hover .owl-nav .owl-prev,

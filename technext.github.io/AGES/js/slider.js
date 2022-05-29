@@ -99,6 +99,13 @@
 $(document).ready(function() {
  
   $("#owl-example").owlCarousel({
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 500,
+    arrows: false,
+    pauseOnHover: false,
+    pause:false,
+    dots: true,
       itemsDesktop : [1499,4],
       itemsDesktopSmall : [1199,3],
       itemsTablet : [899,2],
