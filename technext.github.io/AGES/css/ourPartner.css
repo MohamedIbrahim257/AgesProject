@@ -346,3 +346,44 @@ div.positionBtn{
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.align{
+  position: fixed;
+  left: 2%;
+  bottom: 10%;
+  z-index: 999;
+}
+
+
+.phone {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.cta {
+  height: 60px;
+  width: 150px;
+  color: white;
+  z-index: 1;
+  transition: 1.2s;
+  background: linear-gradient(45deg, rgb(0, 123, 255) 0%, rgb(13, 17, 40) 120%);
+}
+
+.ph {
+  height: 60px;
+  width: 150px;
+  background:linear-gradient(45deg, rgb(0, 123, 255) 0%, rgb(13, 17, 40) 120%);
+  background-size: cover;
+  color: white;
+  box-shadow: 3px 3px 30px #aaa;
+}
+
+.cta:hover {
+  transform: translateX(90%);
+  transition: 1.2s;
+}
