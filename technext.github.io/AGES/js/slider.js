@@ -144,3 +144,29 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+
+
+  // Scroll Up Button
+  
+  $(window).scroll(function()
+  {
+      var scrolltop=$(this).scrollTop();
+      if(scrolltop>=400)
+      {
+          $(".scrollUp").show();
+      }
+      else { $(".scrollUp").hide();
+      }
+      });
+      $(".scrollUp").click(function()
+      {
+          $("html,body").animate({scrollTop: 0}, 1000);
+      });
+  
+  
+  });
+
+
+
+  
