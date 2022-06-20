@@ -371,6 +371,7 @@ div.positionBtn{
   min-height: 100vh;
   padding: 10vh 0 0;
 }
+
 .faq-title h2 {
   position: relative;
   margin-bottom: 45px;
@@ -426,7 +427,7 @@ div.positionBtn{
   padding-left: 30px;
   padding-right: 30px;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: 1px;
   color: #3b566e;
   text-decoration: none !important;
