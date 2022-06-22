@@ -142,7 +142,7 @@
     z-index: 1
 }
 
-.owl-carousel .fadeOut {
+ .owl-carousel .fadeOut {
     -webkit-animation-name: fadeOut;
     animation-name: fadeOut
 }
@@ -163,7 +163,7 @@
     100% {
         opacity: 0
     }
-}
+} 
 
 .owl-height {
     transition: height .5s ease-in-out
