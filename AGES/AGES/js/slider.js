@@ -181,3 +181,17 @@ $(document).ready(function(){
       $modal.addClass(HIDE_CLASS);
     });
   });
+
+
+//   window.onscroll = function() {myFunction()};
+
+// var navbar = document.getElementById("navbar");
+// var sticky = navbar.offsetTop;
+
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("nav-sticky")
+//   } else {
+//     navbar.classList.remove("nav-sticky");
+//   }
+// }
